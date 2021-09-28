@@ -1,20 +1,20 @@
 <?php
-require 'Controller/Route.class.php';
+require 'Route.class.php';
 
 use Controller\Route as Route;
 
 Route::get('/', function() {
-    return "/home.php";
+    return "/View/home.php";
 });
 
 Route::get('/home', function() {
-    return "/home.php";
+    return "/View/home.php";
 });
 Route::get('/login', function() {
-    return "/login.php";
+    return "/View/Auth/login.php";
 });
 Route::get('/register', function() {
-    return "/register.php";
+    return "/View/Auth/register.php";
 });
 
 
